@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css>" >
+    <script src="https://kit.fontawesome.com/6da635e2db.js"> crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <title>The Fashion Pet Salon</title>
+
+</head>
+<body>
+    <header>
+        <div class="heading1">
+        <h1>The Fashion Pet Salon</h1> 
+        </div>
+        <img class="cover-img" src="/img/catsdogsbg.jpg">
+        <div class="heading2">
+        <h2>Registration Form:</h2>
+        </div>
+        
+        
+        
+    </header>
+
+    <nav class="reg-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="register.html">Register</a>
+    </nav>
+    
+        <main class="container">
+
+            <form action="">
+            <p class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" type="text" id="petName">
+                
+            </p>
+            <p class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="text" class="form-control" type="text" id="petGender">
+
+            </p>
+            <p class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" class="form-control" type="text" id="petAge">
+            </p>
+                <p class="form-group">
+                <label for="type">Type:</label>
+                <input type="text" class="form-control" type="text" id="petType">
+                </p>
+
+            <p class="form-group">
+                <label for="breed">Breed:</label>
+                <input type="text" class="form-control" type="text" id="petBreed">
+            </p>
+            
+            <p class="form-group">
+                <label for="comments">Comments</label>
+                <input type="text" class="form-control" type="text" id="petComments">
+            </p>
+
+            
+
+                <p class="form-group">
+                    <label for="services">Services:</label>
+                    <select name="services" class="form-control" id="petService">
+                        <option value=""disabled selected>----Select a Service ----</option>
+                        <option value="Shower"> Shower</option>
+                        <option value="Hair Cut"> Hair Cut</option>
+                        <option value= "Nails Cut"> Nails Cut</option>
+                        <option value="Full Service"> Full Service</option>
+                        </select>
+                    </P>
+                    
+
+                    <p class="form-group">
+                        <label for="price>Price"></label>
+                        <input type="number" name="price" class="form-control" id="petPrice">
+                    </input>
+                    </p>
+
+                    <p class="form-group">                  
+                    <label for="OwnerName">Owner's Name</label>
+                    <input type="text" class="form-control" id="ownersName">
+                    </p>
+        
+                    <p class="form-group">
+                    <label for="contactPhone">Contact Phone:</label>
+                    <input type="text" class="form-control" id="contactPhone">
+                </p>
+                    
+            <input type="button" class="btn btn success" value="Register" onclick="register();">
+            <input type="button" class="btn btn success" value="Donate Now" onclick="donations();">
+            </form>
+
+    </main>
+    <div class="general-info">
+        <p id="registeredPets"></p>
+        <p id="profits"></p>
+    </div>
+
+    <div id="pets">
+
+    </div>
+
+    </div>
+    
+
+    <footer>
+        <p id="footer-info"></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/directory.js"></script>
+</body>
+</html>
